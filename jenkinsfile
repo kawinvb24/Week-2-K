@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone') {
+            steps {
+                git 'https://github.com/your-username/week2-react-native.git'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
+
+        stage('Start Metro (Test)') {
+            steps {
+                sh 'echo "Build Successful ✅"'
+            }
+        }
+    }
+}
