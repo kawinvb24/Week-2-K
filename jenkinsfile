@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/your-username/week2-react-native.git'
+                git 'https://github.com/kawinvb24/Week-2-K.git'
             }
         }
 
